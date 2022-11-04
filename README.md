@@ -9,9 +9,10 @@ I did this to avoid buying keyboard stickers for the usual Russian keyboard layo
 _Ubuntu 20.04.4 LTS_
 
 1) Copy the file `rc` to the directory `/usr/share/X11/xkb/symbols`
-2) Edit the file `/usr/share/X11/xkb/rules/evdev.xml:
-   1) Find the section layoutlist.
-   2) Add the following:
+   _) sudo cp rc /usr/share/X11/xkb/symbols/
+2) Edit the file `/usr/share/X11/xkb/rules/evdev.xml`:
+   _i) Find the section layoutList.
+   _ii) Add the following:
     ```xml
     <layout>
       <configItem>
@@ -26,6 +27,10 @@ _Ubuntu 20.04.4 LTS_
       </variantList>
     </layout>
    ```
+3) In Settings - Keyboard:
+   _i) Click + to add a new input source
+   _ii) Select the three falling dots and type Russian, the option "Other" will appear, select it.
+   _iii) Type RussianCustom, select it and click Add.
    
 ## Mapping
 
